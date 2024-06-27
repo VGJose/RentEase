@@ -5,8 +5,10 @@ import { CalificacionPropietarioComponent } from './calificacion-propietario/cal
 import { SesionRegistroComponent } from './sesion-registro/sesion-registro.component';
 import { PublicarComponent } from './publicar/publicar.component';
 import { PropiedadesComponent } from './propiedades/propiedades.component';
+import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
+  { path: 'inicio', component: LandingComponent },
   { path: 'mensajes', component: MensajesComponent },
   { path: 'calificacion-propietario', component: CalificacionPropietarioComponent },
   { path: 'sesion-registro', component: SesionRegistroComponent},
