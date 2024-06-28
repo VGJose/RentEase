@@ -1,57 +1,64 @@
-<div class="sesion-registro-style">
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form id="registerForm">
-                <h1>Crear Cuenta</h1>
-                <div class="altura"></div>
-                <input type="text" placeholder="Nombres" required />
-                <div class="apm">
-                    <input type="text" placeholder="Apellido Paterno" required />
-                    <s> </s>
-                    <input type="text" placeholder="Apellido Materno" required />
-                </div>
-                <div class="apm">
-                    <input type="text" placeholder="Dia" required />
-                    <s> </s>
-                    <input type="text" placeholder="Mes" required />
-                    <s> </s>
-                    <input type="text" placeholder="Año" required />
-                </div>
-                <input type="email" placeholder="Correo" required />
-                <input type="text" placeholder="DNI" required />
-                <input type="password" placeholder="Contrasena" required />
-                <div class="altura"></div>
-                <div class="altura"></div>
-                <button type="submit">Registrarse</button>
-                <button type="button" class="back-button" (click)="navigateToMain()">Atras</button>
-            </form>
-        </div>
+<div class="app-container">
+    <app-header></app-header>
 
-        <div class="form-container sign-in-container">
-            <form id="loginForm">
-                <img src="assets/v84_5.png" height="18%" alt=""/> 
-                <h1>Iniciar sesion</h1>
-                <div class="altura"></div>
-                <input type="email" placeholder="Correo" required />
-                <input type="password" placeholder="Contrasena" required />
-                <button type="submit">Iniciar sesion</button>
-                <button type="button" class="back-button" (click)="navigateToMain()">Atras</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <img class="filter" src="assets/v84_5.png" height="18%" alt=""/> 
-                    <h2>Bienvenido!</h2>
-                    <p>Para mantenerse conectado con nosotros, inicie sesion con su información personal</p>
-                    <button class="ghost" id="signIn">Iniciar sesion</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h2>Comenzar registro</h2>
-                    <p>Introduce tus datos personales y comienza tu viaje con nosotros.</p>
-                    <button class="ghost" id="signUp">Registrarse</button>
+    <div class="sesion-registro-style">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id="registerForm">
+                    <h1>Crear Cuenta</h1>
+                    <div class="altura"></div>
+                    <input type="text" placeholder="Nombres" required />
+                    <div class="apm">
+                        <input type="text" placeholder="Apellido Paterno" required />
+                        <s> </s>
+                        <input type="text" placeholder="Apellido Materno" required />
+                    </div>
+                    <div class="apm">
+                        <input type="text" placeholder="Dia" required />
+                        <s> </s>
+                        <input type="text" placeholder="Mes" required />
+                        <s> </s>
+                        <input type="text" placeholder="Año" required />
+                    </div>
+                    <input type="email" placeholder="Correo" required />
+                    <input type="text" placeholder="DNI" required />
+                    <input type="password" placeholder="Contrasena" required />
+                    <div class="altura"></div>
+                    <div class="altura"></div>
+                    <button type="submit">Registrarse</button>
+                    <button type="button" class="back-button" (click)="navigateToMain()">Atras</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form id="loginForm">
+                    <img src="assets/v84_5.png" height="18%" alt=""/> 
+                    <h1>Iniciar sesion</h1>
+                    <div class="altura"></div>
+                    <input type="email" placeholder="Correo" required />
+                    <input type="password" placeholder="Contrasena" required />
+                    <button type="submit">Iniciar sesion</button>
+                    <button type="button" class="back-button" (click)="navigateToMain()">Atras</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <img class="filter" src="assets/v84_5.png" height="18%" alt=""/> 
+                        <h2>Bienvenido!</h2>
+                        <p>Para mantenerse conectado con nosotros, inicie sesion con su información personal</p>
+                        <button class="ghost" id="signIn">Iniciar sesion</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h2>Comenzar registro</h2>
+                        <p>Introduce tus datos personales y comienza tu viaje con nosotros.</p>
+                        <button class="ghost" id="signUp">Registrarse</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <app-footer></app-footer>
 </div>
+
+<router-outlet></router-outlet>

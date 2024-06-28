@@ -7,55 +7,60 @@
     <link rel="stylesheet" href="publicar.component.css">
 </head>
 <body>
-    <main>
-        <section class="formulario-publicacion">
-            <div class="logo">
-                <img src="assets/Imagen1.png" alt="RentEase">
-            </div>
-            <h1>Formulario de Publicación</h1>
-            <form>
-                <div class="imagenes">
-                <div clas="col">
-                    <div><img src="assets/Imagen2.png" alt="Descripción de la imagen" width="460" height="200 "class="absolute-image"></div>
-                    <div><label>Imágenes relacionadas al inmueble</label></div>
+    <div class="app-container">
+        <app-header></app-header>
+        <main>
+            <section class="formulario-publicacion">
+                <div class="logo">
+                    <img src="assets/Imagen1.png" alt="RentEase">
                 </div>
-                    
-                    <div class="imagenes-opciones">
-                        <div class="radio-item">
-                            <input type="radio" id="fotos" name="imagenes" value="fotos">
-                            <label for="fotos">Fotos de las habitaciones</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="planos" name="imagenes" value="planos">
-                            <label for="planos">Planos y medidas del inmueble</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="otros" name="imagenes" value="otros">
-                            <label for="otros">Otros...</label>
-                        </div>
+                <h1>Formulario de Publicación</h1>
+                <form>
+                    <div class="imagenes">
+                    <div clas="col">
+                        <div><img src="assets/Imagen2.png" alt="Descripción de la imagen" width="460" height="200 "class="absolute-image"></div>
+                        <div><label>Imágenes relacionadas al inmueble</label></div>
                     </div>
-                    <select>
-                        <option value="jpg">jpg</option>
-                    </select>
-                    <button type="button">+</button>
-                </div>
-                <div class="ubicacion">
-                    <label>Ingrese la dirección o permita usar su ubicación actual</label>
-                    <input type="text" placeholder="Dirección">
-                </div>
-                <div class="descripcion">
-                    <label>Descripción del inmueble:</label>
-                    <textarea rows="4" cols="50"></textarea>
-                </div>
-                <div class="requisitos">
-                    <label>Requisitos, reglas y/o contratos:</label>
-                    <button type="button">jpg</button>
-                    <button type="button">PDF</button>
-                    <button type="button">...</button>
-                </div>
-                <button type="submit" class="publicar">Publicar</button>
-            </form>
-        </section>
-    </main>
+                        
+                        <div class="imagenes-opciones">
+                            <div class="radio-item">
+                                <input type="radio" id="fotos" name="imagenes" value="fotos">
+                                <label for="fotos">Fotos de las habitaciones</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="planos" name="imagenes" value="planos">
+                                <label for="planos">Planos y medidas del inmueble</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="otros" name="imagenes" value="otros">
+                                <label for="otros">Otros...</label>
+                            </div>
+                        </div>
+                        <select>
+                            <option value="jpg">jpg</option>
+                        </select>
+                        <button type="button">+</button>
+                    </div>
+                    <div class="ubicacion">
+                        <label>Ingrese la dirección o permita usar su ubicación actual</label>
+                        <input type="text" placeholder="Dirección">
+                    </div>
+                    <div class="descripcion">
+                        <label>Descripción del inmueble:</label>
+                        <textarea rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="requisitos">
+                        <label>Requisitos, reglas y/o contratos:</label>
+                        <button type="button">jpg</button>
+                        <button type="button">PDF</button>
+                        <button type="button">...</button>
+                    </div>
+                    <button type="submit" class="publicar">Publicar</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <app-footer></app-footer>
 </body>
 </html>
+<router-outlet></router-outlet>

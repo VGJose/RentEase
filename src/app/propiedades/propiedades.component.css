@@ -8,7 +8,14 @@ body {
   padding: 0;
   background-color: #f7f7f7;
 }
+.app-container{
+  font-family: "Inter", sans-serif;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 
+  }
 .boxgrid {
   margin: auto;
   display: grid;

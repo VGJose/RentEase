@@ -1,13 +1,2 @@
-<div class="app-container">
-    <app-header (componentSelected)="selectComponent($event)"></app-header>
-  
-    <div *ngIf="selectedComponent === 'A'"><app-landing></app-landing></div>
-    <div *ngIf="selectedComponent === 'B'"><app-mensajes></app-mensajes></div>
-    <div *ngIf="selectedComponent === 'C'"><app-calificacion-propietario></app-calificacion-propietario></div>
-    <div *ngIf="selectedComponent === 'D'"><app-publicar></app-publicar></div>
-    <div *ngIf="selectedComponent === 'E'"><app-propiedades></app-propiedades></div>
-    <div *ngIf="selectedComponent === 'F'"><app-sesion-registro></app-sesion-registro></div>
-  
-    <app-footer></app-footer>
-  </div>
+<router-outlet></router-outlet>
   

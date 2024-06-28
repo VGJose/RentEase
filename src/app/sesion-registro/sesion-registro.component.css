@@ -5,6 +5,14 @@
     font-family: "Inter", sans-serif;
 }
 
+.app-container{
+	font-family: "Inter", sans-serif;
+	background: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+  }
+
 .sesion-registro-style {
     background: #f6f5f7;
     display: flex;
@@ -12,8 +20,7 @@
     align-items: center;
     height: 100vh;
     margin: -20px 0 50px;
-	max-width: 1920px;
-	margin: 0 auto;
+
 }
 
 .container {

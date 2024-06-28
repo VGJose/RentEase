@@ -30,3 +30,14 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.app-container{
+	font-family: "Inter", sans-serif;
+	background: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding-left: 15%;
+	padding-right: 15%;
+  
+  }

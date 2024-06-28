@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'sesion-registro', component: SesionRegistroComponent},
   { path: 'publicar', component: PublicarComponent},
   {path: 'propiedades',component:PropiedadesComponent},
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: '', component: LandingComponent },
   { path: '**', redirectTo: '' }
 ];
 @NgModule({
