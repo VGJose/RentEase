@@ -8,6 +8,7 @@ body {
   }
   .app-container{
     font-family: "Inter", sans-serif;
+    align-content: center;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@ body {
     }
   .calificacion{
     margin: 10px;
-    width: 300px;
+    width: 500px;
     height: min-content;
     background-color: #b3b3b336;
   }

@@ -16,7 +16,7 @@ nav {
 }
 .app-container{
     font-family: "Inter", sans-serif;
-    background: #FFFFFF;
+    background-color: #f0f4f8;
     display: flex;
     flex-direction: column;
     margin: 0 auto;

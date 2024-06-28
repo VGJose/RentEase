@@ -1,12 +1,25 @@
 <div class="app-container">
     <app-header></app-header>
+
+ 
+
+    
     <div class="boxgrid">
+
+        <div *ngFor="let image of data" style="text-align:center">
+            <div class="content">
+                <div class="header"><img src="assets/v84_5.png" alt="RentEase" class="logo"></div>
+                <h2>{{image.Titulo}}</h2>
+                <img src="https://imgs.search.brave.com/PYeTZ8SFkuUFVfnwVQK1j9XIxzx6GMEnqetFB_4v7IQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2ZiL1VQQ18tX1Vu/aXZlcnNpZGFkX1Bl/cnVhbmFfZGVfQ2ll/bmNpYXNfQXBsaWNh/ZGFzXy1fTGltYSxf/UGVydSxfU2FudGlh/Z29fb2ZfU3VyY28u/anBn" alt="Propiedad" class="property-img">
+                <button class="confirm-btn" [routerLink]="['/perfil-propiedad']"  (click)="goToReceiver()" >Ver</button>
+            </div>
+        </div>
 
         <div class="content">
             <div class="header"><img src="assets/v84_5.png" alt="RentEase" class="logo"></div>
             <h2>Propiedad #1</h2>
             <img src="assets/casa.jpg" alt="Propiedad" class="property-img">
-            <button class="confirm-btn">Ver</button>
+            <button class="confirm-btn" >Ver</button>
         </div>
 
         <div class="content">

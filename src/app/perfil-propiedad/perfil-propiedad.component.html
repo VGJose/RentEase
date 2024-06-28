@@ -1,0 +1,21 @@
+<div class="app-container">
+    <app-header></app-header>
+    <div class="container">
+      <div class="calificacion">
+          <div class="header">
+            <img src="assets/v84_5.png" alt="RentEase" class="logo">
+          </div>
+          <div class="content">
+            <h2>{{receivedData[0].Titulo}}</h2>
+            
+            <img src="https://imgs.search.brave.com/PYeTZ8SFkuUFVfnwVQK1j9XIxzx6GMEnqetFB_4v7IQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2ZiL1VQQ18tX1Vu/aXZlcnNpZGFkX1Bl/cnVhbmFfZGVfQ2ll/bmNpYXNfQXBsaWNh/ZGFzXy1fTGltYSxf/UGVydSxfU2FudGlh/Z29fb2ZfU3VyY28u/anBn" alt="Propiedad" class="property-img">
+            <h3 style="font-weight: lighter; ">{{receivedData[0].descripcion}}</h3>
+            <h4 style="font-weight: lighter; ">{{receivedData[0].direccion}}</h4>
+
+          </div>
+        </div>
+        
+    </div>  
+    <app-footer></app-footer>
+  </div>
+  <router-outlet></router-outlet>
